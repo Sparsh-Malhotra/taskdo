@@ -1,0 +1,25 @@
+.project-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.4rem 1.4rem 0rem 1.8rem;
+}
+
+.project-name{
+    cursor:pointer;
+}
+
+.project-btns span{
+    padding: 0rem 0.2rem 0rem 0.2rem;   
+    cursor:pointer; 
+}
+
+.project-todos{
+    background: #ebebeb;
+    width: 25px;
+    height:25px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50%;
+}

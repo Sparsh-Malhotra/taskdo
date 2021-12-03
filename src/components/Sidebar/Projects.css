@@ -1,0 +1,32 @@
+.projects-container{
+    padding:0.5rem;
+    font-size:1.2rem;
+    border-bottom: 1px solid rgb(200, 199, 199);
+}
+
+.projects-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight: bold;
+}
+
+.projects-btn,.projects-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.projects-title p{
+    padding-left: 0.3rem;
+}
+
+.projects-btn span{
+    padding:0.5rem 0rem 0.5rem 0.5rem;
+    cursor:pointer;
+}
+
+.edit-btn{
+    margin-right:0.5rem;
+}
+

@@ -6,8 +6,8 @@ function Calendar(){
 
     return (
         <div className='calendar-container'>
-            <div className='header'>
-                <div className='title'>
+            <div className='calendar-header'>
+                <div className='calendar-title'>
                     <AiTwotoneCalendar></AiTwotoneCalendar>
                     <p>Calendar</p>
                 </div>
