@@ -1,0 +1,22 @@
+.nav{
+    min-height: 10vh;
+    background-color:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex:1;
+    padding:1rem;
+    max-width:13%;
+}
+
+.logout-btn{
+    margin-right:2rem;
+    padding:0.6rem 2.5rem 0.6rem 2.5rem;
+    color:white;
+    background-color: #6E5FD9;
+    border-radius:5px;
+}
+
