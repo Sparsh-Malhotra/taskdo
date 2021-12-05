@@ -1,0 +1,43 @@
+.line{
+    height: 1px;
+    background:#bebebe;
+    position: absolute;
+    top:28%;
+    width:0;
+    transition:width 250ms ease-in-out;
+}
+
+.line-through{
+    width:100%;
+
+}
+
+.Todo{
+    padding:0.5rem 1rem;
+}
+
+.todo-container{
+    display:flex;
+    align-items: center;
+}
+
+.todo-container span{
+    cursor:pointer;
+}
+
+.todo-container .todo-text{
+    position:relative;
+    flex: 1;
+    margin:0 1rem;
+    cursor:pointer;
+}
+
+.todo-container .todo-text span{
+    font-size:0.9rem;
+    color:#bebebe;
+}
+
+.add-to-next-day{
+    margin-right: 1rem;
+}
+
