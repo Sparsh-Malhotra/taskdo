@@ -1,8 +1,13 @@
 import { BsPencil } from 'react-icons/bs';
 import { AiFillDelete } from 'react-icons/ai';
+import Modal from './Modal';
+import RenameProject from './RenameProject';
+import {useState} from 'react';
 import './Project.css';
 
 function Project({project,isEdit}){
+    const [showModal, setShowModal] = useState(false)
+
     return(
         <div className='project-container'>
             <div className='project-name'>
@@ -12,7 +17,7 @@ function Project({project,isEdit}){
                 {
                     isEdit ? 
                     <div className='edit-delete'>
-                        <span className='edit'>
+                        <span className='edit' onClick={()=>setShowModal(true)}>
                             <BsPencil></BsPencil>
                         </span>
                         <span className='delete'>
@@ -27,6 +32,9 @@ function Project({project,isEdit}){
                     </div>
                 }
             </div>
+            <Modal showModal={showModal} setShowModal={setShowModal}>
+                <RenameProject project={project} setShowModal={setShowModal}></RenameProject>
+            </Modal>
         </div>
     )
 }
