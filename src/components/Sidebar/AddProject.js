@@ -25,6 +25,7 @@ function AddProject(){
                     heading='New Project!'
                     value={projectName}
                     setValue={setProjectName}
+                    setShowModal={setShowModal}
                     confirmButtonText='+ Add Project'
                 >
                 </ProjectForm>
