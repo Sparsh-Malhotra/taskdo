@@ -1,9 +1,11 @@
 import Todo from './Todo';
 import Next7Days from './Next7Days';
 import './Todos.css';
+import { useContext } from 'react';
+import { TodoContext } from '../../context';
 
 function Todos(){
-    const selectedTodo='Today';
+    const { selectedTodo } = useContext(TodoContext);
 
     const todos = [
         {

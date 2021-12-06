@@ -2,15 +2,22 @@ import { BsPencil } from 'react-icons/bs';
 import { AiFillDelete } from 'react-icons/ai';
 import Modal from './Modal';
 import RenameProject from './RenameProject';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import './Project.css';
+import { TodoContext } from '../../context';
 
 function Project({project,isEdit}){
+
+    const { setSelectedProject } = useContext(TodoContext)
+
     const [showModal, setShowModal] = useState(false)
 
     return(
         <div className='project-container'>
-            <div className='project-name'>
+            <div 
+                className='project-name' 
+                onClick={ () => setSelectedProject(project.name) } 
+            >
                 {project.name}
             </div>
             <div className='project-btns'>
