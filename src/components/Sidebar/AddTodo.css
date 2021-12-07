@@ -3,7 +3,7 @@
     border-bottom: 1px solid rgb(200, 199, 199);
 }
 
-.add-container button{
+.add-container .add-btn{
     margin: 1rem 0rem 1rem 0rem;
     padding:1rem;
     width:95%;
@@ -11,4 +11,96 @@
     color:white;
     border-radius: 3px;
     font-size: 1rem;
+}
+
+.add-container form{
+    padding:1rem 1rem calc(1rem + 2.5rem) 1rem;
+    background-color: white;
+    border-radius: 4px;
+    width:30vw;
+}
+
+.add-container form .text input{
+    padding:1rem;
+    width:100%;
+    margin-bottom: 0.5rem;
+    border:none;
+    font-size: 1.2rem;
+}
+
+.add-container form .text input:focus{
+    outline:none;
+    border-bottom: 1px solid #0080ff;
+}
+
+.add-container form .remind{
+    display: flex;
+    align-items: center;
+    padding:0.5rem;
+}
+
+.add-container form p{
+    margin-left: 0.6rem;
+}
+
+.add-container form .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.add-container form .pick-day{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.add-container form .pick-time{
+    padding: 1.5rem;
+}
+
+.add-container form .pick-project{
+    padding:0.5rem;
+}
+
+.add-container form .pick-project .projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem 1rem 0 1rem;
+}
+
+.add-container form .pick-project .projects .project{
+    border:1px solid #0080ff;
+    border-radius: 5px;
+    padding:0.3rem;
+    margin:0.3rem;
+    cursor: pointer;
+}
+
+.add-container form .pick-project .projects .active{
+    background:#0080ff;
+    color:white;
+}
+
+.add-container form .cancel{
+    position: absolute;
+    top:0;
+    right:0.3rem;
+    cursor: pointer;
+}
+
+.add-container form .confirm{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.add-container form .confirm button{
+    width:100%;
+    height:2.5rem;
+    background: #0080ff;
+    color:white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
 }
