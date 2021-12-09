@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 .nav{
     min-height: 10vh;
-    background-color:black;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background-color: rgb(219, 216, 227);
+    border-bottom: 1px solid black;
 }
-
+/* 
 .logo{
     flex:1;
     padding:1rem;
     max-width:13%;
-}
+} */
 
 .logout-btn{
     margin-right:2rem;
     padding:0.6rem 2.5rem 0.6rem 2.5rem;
     color:white;
-    background-color: #6E5FD9;
+    background-color: rgb(92, 84, 112);
     border-radius:5px;
 }
 
+.heading{
+    font-weight: 900;
+    font-size: 50px;
+    flex: 1;
+    margin-left: 20px;
+    color: rgb(180, 165, 165);
+    letter-spacing: 12px;
+}
